@@ -1,0 +1,24 @@
+= Translator 
+
+== Description
+Gem to convert between HSL color to RGB and vice versa, RGB color to hex color code and vice versa.
+
+== Installation
+
+gem install color_conversion
+
+== Usage 
+
+  require 'rubygems' 
+  require 'color_conversion' 
+
+  cl  = ColorConversion.new 255, 255, 255
+
+  cl.to_hex # returns hex notation of r g b (255, 255, 255)
+  cl.to_hsl # returns hsl notation of r g b (255, 255, 255)
+
+  also can be initialized from hsl or hex with
+
+  cl = ColorConversion.from_hsl(360, 100, 100) #where 360 is hue, 100 is saturation and 100 is luminous or brightness
+  cl = ColorConversion.from_hex("#FFFFFF") 
+  
