@@ -20,5 +20,6 @@ gem install color_math
   also can be initialized from hsl or hex with
 
   cl = ColorMath.from_hsl(360, 100, 100) #where 360 is hue, 100 is saturation and 100 is luminous or brightness
+  
   cl = ColorMath.from_hex("#FFFFFF") 
   
