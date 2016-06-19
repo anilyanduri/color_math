@@ -8,11 +8,13 @@ gem install color_math
 # Usage 
 
   require 'rubygems' 
+
   require 'color_math' 
 
   cl  = ColorMath.new 255, 255, 255
 
   cl.to_hex # returns hex notation of r g b (255, 255, 255)
+
   cl.to_hsl # returns hsl notation of r g b (255, 255, 255)
 
   also can be initialized from hsl or hex with
